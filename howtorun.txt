@@ -1,0 +1,11 @@
+//To generate 1000_tagfreq.in and tagfreq.in
+python most_frequent_tags.py primary.in
+
+//To generate prior.in
+python prior.py 1000_tagfreq.in
+
+//To generate likelihood.in (order matters)
+python likelihood.py primary.in secondary.in 1000_tagfreq.in
+
+//Following is link of index files:
+https://drive.google.com/folderview?id=0B9R689l64JuoU3IzNml1VGNXMDA&usp=sharing
